@@ -122,14 +122,10 @@ activities = {
 ```
 How would I add 'granola bar' to things you should have when hiking? 
 
-  activities[:hiking][:supplies] << "granola bar"
+  ``` activities[:hiking][:supplies] << "granola bar" ```
 
 23. What are the 4 Principles of OOP? Give a one sentence explanation of each.
-
- Abstraction - simplifying a complex action with a verb
- 
- Encapsulation - keeping as much state and logic within class 
-
- Inheritance - ability for classes to inherit behaviors and attributes from parent classes
-
- Polymorphism - something that occurs in many forms
+  * Abstraction - simplifying a complex action with a verb
+  * Encapsulation - keeping as much state and logic within class
+  * Inheritance - ability for classes to inherit behaviors and attributes from parent classes
+  * Polymorphism - something that occurs in many forms
