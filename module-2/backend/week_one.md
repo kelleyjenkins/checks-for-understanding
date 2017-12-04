@@ -12,15 +12,19 @@ Note: When you're done, submit a PR.
   * DELETE - deleting a resource
 
 2. What is Sinatra?
+
     Sinatra is a domain specific language that uses MVC. 
 
 4. What is MVC?
-    MVC stands for MOdel, View, Controller and is convention used for displaying web pages in Rails and Sinatra
+
+    MVC stands for Model, View, Controller and is convention used for displaying web pages in Rails and Sinatra
 
 5. Why do we follow conventions when creating our actions/path names in our Sinatra routes?
+
     Because it allows for Restful routes which create a common way to identify and follow the structure of the app.
 
 6. What types of variables are accessible in our view templates without explicitly passing them?
+
     Variables that we create in our controller are accessible to view templates. 
 
 7. Given the following block of code, how would I pass an instance variable `count` with a value of `1` to my `index.erb` template?
@@ -34,7 +38,9 @@ Note: When you're done, submit a PR.
     In index view you would call horses.count
 
 8. In the same code block, how would I pass a local variable `name` with a value of `Mr. Ed` to the view?
-    in controller define: \n
+
+    in controller define:
+    
     name = "Mr. Ed"
     
     in index call horse.name 
