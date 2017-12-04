@@ -5,20 +5,20 @@ Fork this respository. Answer the questions to the best of your ability. Try to 
 Note: When you're done, submit a PR. 
 
 1. List the five common HTTP verbs and what the purpose is of each verb.
-  GET- pulling a resource from database
-  POST - creating a resource in a database
-  PUT - updating a resource
-  PATCH - updating part of a resource
-  DELETE - deleting a resource
+  * GET- pulling a resource from database
+  * POST - creating a resource in a database
+  * PUT - updating a resource
+  * PATCH - updating part of a resource
+  * DELETE - deleting a resource
 
 2. What is Sinatra?
-
+    Sinatra is a domain specific language that uses MVC. 
 
 4. What is MVC?
-  MVC stands for MOdel, View, Controller and is convention used for displaying web pages in Rails and Sinatra
+    MVC stands for MOdel, View, Controller and is convention used for displaying web pages in Rails and Sinatra
 
 5. Why do we follow conventions when creating our actions/path names in our Sinatra routes?
-  Because it
+    Because it allows for Restful routes which create a common way to identify and follow the structure of the app.
 
 6. What types of variables are accessible in our view templates without explicitly passing them?
     Variables that we create in our controller are accessible to view templates. 
@@ -31,10 +31,10 @@ Note: When you're done, submit a PR.
     erb :index
   end
   ```
-  In index view you would call horses.count
+    In index view you would call horses.count
 
 8. In the same code block, how would I pass a local variable `name` with a value of `Mr. Ed` to the view?
-    in controller define: 
+    in controller define: \n
     name = "Mr. Ed"
     
     in index call horse.name 
