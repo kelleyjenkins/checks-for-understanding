@@ -105,10 +105,12 @@ Review Questions:
 21. Given a CSV file (“films.csv”) with these headers [id, title, description], how would you load these into your database to create new instances of Film?  
 
     First I'd run rake db:create_migration NAME=create_films in the terminal. Then in the file that is created I would add to the change method
+    
 ```create_table :films do |film|
     film.integer :id
     film.text :title
     film.text :description```
+    
  Once that was complete, I would run rake db:migrate to load the data as specified. 
   
 22. Given the following hash:
