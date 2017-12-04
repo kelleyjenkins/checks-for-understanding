@@ -77,19 +77,13 @@ Note: When you're done, submit a PR.
 
 16. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
    
-   get '/root' do -- this will retreive the page with the root you are starting at
-  
-   get '/root/new' do -- this will retreive the page with a form to enter the new resource
-  
-   post '/root' do -- this will actually create the new resource and add it to the database
-  
-   get '/root/:id' do -- this will access a single resource
-   
-   get '/root/:id/edit' do -- this will access the form page to edit your resource
-   
-   put 'root'/:id do |id| -- this will update the resource id you edited
-   
-   delete 'root/:id' do |id| -- this will delete the record you chose
+  * get '/root' do -- this will retreive the page with the root you are starting at
+  * get '/root/new' do -- this will retreive the page with a form to enter the new resource 
+  * post '/root' do -- this will actually create the new resource and add it to the database
+  * get '/root/:id' do -- this will access a single resource
+  * get '/root/:id/edit' do -- this will access the form page to edit your resource
+  * put 'root'/:id do |id| -- this will update the resource id you edited
+  * delete 'root/:id' do |id| -- this will delete the record you chose
 
 17. What's a migration? 
   
