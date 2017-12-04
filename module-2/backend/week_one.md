@@ -46,9 +46,11 @@ Note: When you're done, submit a PR.
     in index call horse.name 
 
 9. What's the purpose of ERB?
+  
   ERB is an embedded ruby file where you can use html to display your app but within the html, you can use ruby logic to get the results you want to output to the screen. 
   
 10. Why do I need a development AND test database?
+    
     IDK
 
 11. What is CRUD and why is it important?
@@ -56,37 +58,53 @@ Note: When you're done, submit a PR.
   CRUD stands for create, read, update, delete and it is important because we must be able to create resources for our databases, read them, update or edit them, and delete them. 
   
 12. What does HTTP stand for? 
+  
   Hypertext Transfer Protocol 
   
 13. What are the two ways to interpolate Ruby in an ERB view template? What's the difference between these two ways?
+  
   <%= %> using this tag will display your Ruby output in the view.
+  
   <% %> and using this tag will perform the logic but not display it to the page. 
   
 14. What's an ORM?
-Object Relational Mapping- 
+
+  Object Relational Mapping- 
 
 15. What's the most commonly used ORM in ruby (Sinatra & Rails)?
-  ActiveRefcord
+  
+   ActiveRecord
 
 16. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
-  get '/root' do -- this will retreive the page with the root you are starting at
-  get '/root/new' do -- this will retreive the page with a form to enter the new resource
-  post '/root' do -- this will actually create the new resource and add it to the database
-  get '/root/:id' do -- this will access a single resource
-  get '/root/:id/edit' do -- this will access the form page to edit your resource
-  put 'root'/:id do |id| -- this will update the resource id you edited
-  delete 'root/:id' do |id| -- this will delete the record you chose
+   
+   get '/root' do -- this will retreive the page with the root you are starting at
+  
+   get '/root/new' do -- this will retreive the page with a form to enter the new resource
+  
+   post '/root' do -- this will actually create the new resource and add it to the database
+  
+   get '/root/:id' do -- this will access a single resource
+   
+   get '/root/:id/edit' do -- this will access the form page to edit your resource
+   
+   put 'root'/:id do |id| -- this will update the resource id you edited
+   
+   delete 'root/:id' do |id| -- this will delete the record you chose
 
 17. What's a migration? 
-A migration is a way to create tables and databases in ActiveRecord
+  
+  A migration is a way to create tables and databases in ActiveRecord
 
 18. When you create a migration, does it automatically modify your database?
-Creating a migration simply gives your table a name. You must also fill in the instructions for your table in the migration file and perform the migrate command (rake db:migrate) to actually migrate the data into the table. 
+  
+  Creating a migration simply gives your table a name. You must also fill in the instructions for your table in the migration file and perform the migrate command (rake db:migrate) to actually migrate the data into the table. 
 
 19. How does a model relate to a database?
-  The model allows you to call methods on attributes you've established in your database.
+   
+   The model allows you to call methods on attributes you've established in your database.
 
 20. What is the difference between `#new` and `#create`?
+  
   .new will create a new object as specified but it will not save it to your database. .create will both create the object and save it into your database in one sweep. 
 
 Review Questions:  
@@ -110,10 +128,14 @@ activities = {
 ```
 How would I add 'granola bar' to things you should have when hiking? 
 
-activities[:hiking][:supplies] << "granola bar"
+  activities[:hiking][:supplies] << "granola bar"
 
 23. What are the 4 Principles of OOP? Give a one sentence explanation of each.
-Abstraction - simplifying a complex action with a verb
-Encapsulation - keeping as much state and logic within class 
-Inheritance - ability for classes to inherit behaviors and attributes from parent classes
-Polymorphism - something that occurs in many forms
+
+ Abstraction - simplifying a complex action with a verb
+ 
+ Encapsulation - keeping as much state and logic within class 
+
+ Inheritance - ability for classes to inherit behaviors and attributes from parent classes
+
+ Polymorphism - something that occurs in many forms
