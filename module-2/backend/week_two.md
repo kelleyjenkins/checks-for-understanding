@@ -38,14 +38,20 @@ Now how would you find the owner of the team with an id of 4?
 
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
   
+  
   Teacher has_many Sudents
+ 
   Student belongs_to Teacher
   
+  
   Student:
+  
   name
+  
   teacher_id
   
   Teacher:
+  
   name
   
   
