@@ -40,19 +40,14 @@ Now how would you find the owner of the team with an id of 4?
   
   
   Teacher has_many Sudents
- 
   Student belongs_to Teacher
   
-  
   Student:
-  
-  name
-  
-  teacher_id
+  - name
+  - teacher_id
   
   Teacher:
-  
-  name
+  - name
   
   
 6. Define foreign key, primary key, and schema.
