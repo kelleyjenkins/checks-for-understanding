@@ -19,8 +19,8 @@ What are some methods you can call on `Team`? If these methods aren't defined in
   
   Some methods you can call on Team might be order, group, join, group_by, find_by, find... We have access to these methods because the class Team inherits from ActiveRecord allowing Team to use any methods that ActiveRecord has. 
 
-3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
-  ```name = Team.find(4).name```
+3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?\
+  ```name = Team.find(4).name```\
   ```owner =Team.find(4).owner_id```
 
 4. Assume that you added a line to your `Team` class as follows:
