@@ -31,13 +31,13 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
     - when your create a `form_for` you pass in the instance that you are creating the form for. Based on the instance, it knows to submit the form to that instances post method. 
 11. Create a form using a `form_for` helper to create a new `Horse`. 
 
-  ```<% form_for @horse do |f| %> ```
-    ```<%= f.label :name %> ```
-    ```<%= f.text_area :name %>```
-    ```<%= f.label :breed %>```
-    ```<%= f.text_area :breed %>```
-   ```<% end %> ```
-    
+  ```<% form_for @horse do |f| %>
+        <%= f.label :name %> 
+        <%= f.text_area :name %>
+        <%= f.label :breed %>
+        <%= f.text_area :breed %>
+     <% end %>```
+     
 12. Why do we want to validate our models?
   - Validating our models makes it so the entries added to the database include what we need it to inlcude. Validating the presence of an attribute means it will not accept an entry that does not include that attribute. 
 
