@@ -36,8 +36,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
         <%= f.text_area :name %>
         <%= f.label :breed %>
         <%= f.text_area :breed %>
-     <% end %>```
-     
-12. Why do we want to validate our models?
-  - Validating our models makes it so the entries added to the database include what we need it to inlcude. Validating the presence of an attribute means it will not accept an entry that does not include that attribute. 
-
+      <% end %>```
+      
+ 12. Why do we want to validate our models?
+  - Validating our models makes it so the entries added to the database include what we need it to inlcude. Validating the presence of an attribute means it will not accept an entry that does not include that attribute.
