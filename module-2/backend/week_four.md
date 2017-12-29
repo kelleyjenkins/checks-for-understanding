@@ -22,9 +22,9 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 * What’s the difference between authentication and authorization?
   - Authentication verifies the identity of the user, while authorization permits that user to see/do certain things in the app. Authentication is that a user is who they say they are and authorization is that a user can do see what they should see. 
 * What’s a before filter?
- - A before filter is a way to instruct the controller to do a specific action before performing any or certain methods within that controller. For example, a before_action :require_admin would cause the app to check that the current user is an admin before performing the actions in the controller. 
+  - A before filter is a way to instruct the controller to do a specific action before performing any or certain methods within that controller. For example, a before_action :require_admin would cause the app to check that the current user is an admin before performing the actions in the controller. 
 * How do we keep track of a user once they’ve logged in?
- - Sessions help us keep track of a user once they've logged in. 
+  - Sessions help us keep track of a user once they've logged in. 
 * When do you want to namespace a resource? When do you want to nest a resource? What's the differences between those two approaches?
   - Namespacing is helpful when you have routes for a specific resource but want to make sure certain users have additional functionality and control over some of those routes. For example and admin may have edit and delete functionality but you don't want all users to have that functionality. Namespacing would allow an admin route to perform those funcitons. Nesting resources is a way to capture a resources relationship within routing. If one resource is dependent on another, you might nest the resources since you can't access one resource without the other. The difference between these two approaces mainly has to do with accessability. Nesting does not restrict the views or functionality of the app for specific users while namespacing does have that ability. 
 * At a high level, what tools can you use to implement authorization? How would you use them?
