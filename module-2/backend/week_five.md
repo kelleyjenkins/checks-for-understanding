@@ -63,10 +63,31 @@ scope :user, where(‘user.active == true)
   ```ruby
   {cart: {"17" => 4, "204" => 52, "29" => 22}}
   ```
+ 
 
-    12a. How would you add item with id of 48 with a quantity of 4?  
-    12b. How would you increase the quantity of item 29?  
-    12c. How would you find out how many items your user is thinking about purchasing?   
+    12a. How would you add item with id of 48 with a quantity of 4?
+      ```ruby
+        cart = {:cart=>{"17"=>4, "204"=>52, "29"=>22}}
+        cart[:cart]["48"]= 4
+       ```
+    12b. How would you increase the quantity of item 29?
+       ```ruby
+        cart = {:cart=>{"17"=>4, "204"=>52, "29"=>22}}
+        cart[:cart]["29"] += 4
+       ```
+    
+    12c. How would you find out how many items your user is thinking about purchasing? 
+          ```ruby
+           cart = {:cart=>{"17"=>4, "204"=>52, "29"=>22}}
+           cart[:cart].values.sum
+            ```
 
-  13. What is polymorphism? How does it relate to duck-typing? What are two ways you use this in everyday Rails applications?  
-  14. How would you clean the string "(630) 854-5483" to "630.854.5483"?  
+  13. What is polymorphism? How does it relate to duck-typing? What are two ways you use this in everyday Rails applications?
+           - What is duck-typing?
+            
+  14. How would you clean the string "(630) 854-5483" to "630.854.5483"? 
+          ```ruby
+          phone = "(630) 854-5483"
+          phone.gsub(" ", '').delete("(").gsub(/[^\d]/, ".")
+          ```
+    
