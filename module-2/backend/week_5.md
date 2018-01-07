@@ -33,7 +33,7 @@
     - how to execute the test suite
     - any special instructions necessary to use project
     - gems and special features of your project
-    Some benefits of taking the time to update a readme for a project are that users will be able to quickly implement your project, people will be able to understand your application, and employers or people interested in your project will see well organized and complete directions.  
+    - Some benefits of taking the time to update a readme for a project are that users will be able to quickly implement your project, people will be able to understand your application, and employers or people interested in your project will see well organized and complete directions.  
 
 8. What are the top four accessibility issues that we as developers should be aware of?
   - visual
