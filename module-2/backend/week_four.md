@@ -9,6 +9,7 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
 
 ### Questions
 
+<<<<<<< HEAD
 * What is a cookie?
   - A cookie is an identification tool that stores a small peice of data in the browser of a website. It is always stored on the client side. 
 * What’s the difference between a session and a cookie?
@@ -33,3 +34,29 @@ Note: When you're done, submit a PR with a reflection in the comments about how 
   - An enum is a way to define an attribute using numbers. It allows your app to identify the role of a user quickly especially if roles are changing frequently. You declare an enum in the model by defining the enum with an array. An integer datatype needs to be in your database in order to use an enum. 
 * What are some strategies you can use to keep your views DRY?
   - You can use form helpers and route helpers. Form helpers allow you to create one form and call that form from each of your views that require a form. Route helpers make it easier to link to different routes from your view. 
+=======
+1. What is a cookie?
+2. What’s the difference between a session and a cookie?
+3. What’s a flash and when do you want to use flashes?
+4. Why do people say “HTTP is stateless”?
+5. What’s authentication? Explain.
+6. What’s the difference between authentication and authorization?
+7. What’s a before filter?
+8. How do we keep track of a user once they’ve logged in?
+9. When do you want to namespace a resource? When do you want to nest a resource? What's the differences between those two approaches?
+10. At a high level, what tools can you use to implement authorization? How would you use them?
+11. What's an enum, and what advantages does it offer? What data type needs to be in your database to use an enum? Where do you declare an enum?
+12. What are some strategies you can use to keep your views DRY?
+
+
+Reviews Questions 
+13. Given the following array of hashes, how would I print an alphabetical list of holidays?
+```ruby
+[
+ {holiday: {name: "St Patrick's Day", supplies: ["Corned Beef and Cabbage"]},
+ {holiday: {name: "Halloween", supplies: ["Candy", "Costume"]},
+ {holiday: {name: "Hanukkah", supplies: ["Menorah"]}
+]
+```  
+14. How would you clean incoming data to ensure "$300" or "300.00" is stored as 300? 
+>>>>>>> upstream/master
