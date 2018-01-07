@@ -15,10 +15,9 @@
     - The asset pipeline attempts to decrease the time it takes for our pages to load by speeding up the access to the static assets. By saving information in the cache there does not need to be a trip to the server to access certain files. The asset pipeline makes assets more compact, precompiles languages related to CSS/JS, and fingerprints file names to account for files changing. 
     
 5. Why do we precompile our assets?
-    - Our browser understands 3 languages—HTML, CSS and JS. The asset pipeline handles the translation of sub languages like SASS, Coffeescript, etc. into CSS/JS/HTML. By storing these files in the cache they are ready to display our webpage quickly and efficiently. 
+    - Our browser understands 3 languages—HTML, CSS and JS. The asset pipeline handles the translation of sub languages like SASS, Coffeescript, etc. into CSS/JS/HTML. By storing these files in the cache they are ready to display our webpage quickly and efficiently.
+   
 6. What do each of the following tags do?
-    -
-
 ```ruby 
 <%= stylesheet_link_tag "application" %> -- this calls to the application.css file in yoru stylesheet folder and will compile any application files with other extensions that are kept in your stypesheet folder serve the application.css file. 
 <%= javascript_include_tag "application" %>-- same as above but will load all javascript files as .js
